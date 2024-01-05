@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="nav">
+    <div class="choiximg">
+      <img class="yoda" src="/pages/image/yoda.JPG" alt="">
+      <a href="./index.html"></a>
+    </div>
+    <div class="choix">
+      <img src="/pages/image/abri.png" alt="">
+      <a href="./index.html">Home</a>
+    </div>
+    <div class="choix">
+      <img src="/pages/image/projet.png" alt="">
+      <a href="/pages/projet/projet.html">Projects</a>
+    </div>
+    <div class="choix">
+      <img src="/pages/image/projet.png" alt="">
+      <a href="/pages/contact/contact.html">Contact</a>
+    </div>
+    <div class="choix">
+      <img src="/pages/image/roadmap (1).png" alt="">
+      <a href="/pages/roadsmap/roadsmap.html">RoadMaps</a>
+    </div>
+  </header>
+    <main>
+      <div class="principal">
+        <form class="formulaire" action="http://localhost:5173/envoyer-email" method="post">
+          <!-- regardez pour la difference de taile du let's-->
+          <h1>LET’S <span>TALK</span></h1> 
+          <h2>Fill in the form below, or reach out to us directly —<span> prim8.dev@gmail.com</span> </h2>
+           
+          <input required type="text" name="name" placeholder="Name" >
+          <input type="text" name="email" placeholder="Email" required>
+          <textarea name="message" id cols="30" rows="10" placeholder="Message"></textarea>
+          <button type="submit" onclick="envoyerFormulaire()">Envoyer</button>
+        </div>
+      </form>
+      
+    </main>
+     <footer class="bas">
+    <div class="blase">
+      <h1>Prime_Heigt</h1>
+    </div>
+    <div class="copyr">
+      <h3>Copyright © 2024 Prime_Height Developpement</h3>
+    </div>
+    <div class="logo"> <a href="https://github.com/eimanmohamedcherif"><img src="./pages/image/github.png" alt=""></a>
+    </div>
+
+  </footer>
+
+
+    <div id="particles-js"></div>
+    <canvas class="background"></canvas>
+  
+    <script type="module" src="./main.js">
+    
+    </script>
+  </body>
+</html>

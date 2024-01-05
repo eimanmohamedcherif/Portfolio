@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Work+Sans:ital,wght@1,200&display=swap');
+
+* body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: -3;
+  height: 90vh;
+  
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  /* Assurez-vous que le canvas ne bloque pas les interactions avec les éléments sous-jacents */
+  z-index: -2;
+  /* Assurez-vous que le canvas est encore plus en arrière-plan */
+}
+
+.nav {
+  height: 7vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  border-radius: 10px;
+  z-index: 1;
+ 
+  background-color: rgba(0, 0, 0, 0.384);
+  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(15px) !important;
+  background-color: #1b1a2ea9 !important;
+  box-shadow: 0 10px 10px 0 rgba(9, 5, 29, .171) !important;
+
+}
+
+.nav button {
+  background-color: rgba(250, 235, 215, 0);
+
+}
+
+.choix {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  align-items: center;
+  gap: 5px
+}
+
+.nav .yoda {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.nav a {
+  height: 20px;
+  width: 60px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+
+}
+
+.nav img {
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  height: 300vh;
+  
+}
